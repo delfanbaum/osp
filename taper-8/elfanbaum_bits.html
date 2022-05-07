@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bits (Taper #8)</title>
+
+<!-- “Bits,” Copyright (C) 2022 Daniel Elfanbaum
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright 
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+This is from Taper #8: 8-Bit Nostalgia, Spring 2022:
+
+https://taper.badquar.to/8/elfanbaum_natural_units_of_data_revised.html
+
+Brief remarks:
+
+* The title is a revised play on the definition of a "word" in computing. Words can have lengths of any (typically) paired number of bits, e.g., 1, 2, 4, or -- relevantly here -- 8. I was born a few years too late to have the 8-bit nostalgia bug too bad, but that stuff and aesthetic was always around and has always held interest for me. 
+
+* The characters go from binary to ASCII encoding values to plain-'ol letters. It might have been nice to include other encodings, but UTF-8 didn't come around until '92, so that was out, and we're pretty space-constrained in these works anyway. The limit is 2048 bytes for the projects; this one is 2042.
+
+Technology notes: This was written in TypeScript because I need to practice it and compiled with `tsc`, then minified at https://jscompress.com. Styles were written in Sass then compiled down with Dart Sass. For extra nerd points, all of this was written in (neo)vim, and the revisions took place on a Raspberry Pi. The uncompressed source can be seen at https://github.com/delfanbaum/osp/taper-8. 
+
+-->
+
+	<style>
+	body { margin:0 ; overflow:hidden }
+	a { color:#eee ; text-decoration:none }
+	header { margin:0 ; padding:0 ; background-color:#444 ; color:#bbb ;
+		position:relative ; z-index:1000 }
+	header > h1 { margin:0 ; font-size:12px ; font-family:sans-serif ;
+		border-bottom:1px #999 solid ; padding:5px 10px ; line-height:17px }
+</style>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header id=nav>
+	<h1>
+		<a href="index.html">Taper #8 :
+		8-Bit Nostalgia</a> : Spring 2022 <br>
+		<a href="title_of_your_work.html">"Bits"</a> by
+		<a href="about.html#authorlastname">Daniel Elfanbaum</a> :
+		<a href="prev.html">&lt;&lt;</a> &mdash;
+		<a href="next.html">&gt;&gt;</a>
+	</h1>
+</header> <!-- All poem code goes here, and must be less than or equal to 2048 bytes (not including closing </body> and </html> tags below)-->
+<style>div{margin:auto;max-width:64ch;width:90%;font-size:18pt;line-height:1.3;font-family:"Courier New",monospace}div a{color:#000}div a:hover{color:#942525;border-bottom:1px solid #942525}#a{text-align:center;color:#999;font-size:11pt;margin:30pt}</style><div><p id="a">(please click below)</p><p id="t">It's just data, layers of interpretation. I remember landlines and car phones and the NES but never played it much. My dad and his brother bought one at the mall and played Contra for hours. Crushed tones, sounds of explosions, firing guns. Left shoot, right jump. The violence was lost on me but not my mom. Just bits of pixels, little sprites. Up up down down left right left right B A. There was the GameShark but we lived in the middle of the country and I'd never seen the ocean. It took me a long time to understand that a Contra didn't refer to the game. Now you can emulate the game on anything. The computer in your pocket. Just how you look at it. Always about how you look at it, the presentation, encoding, the function. We seek out how many nostalgias. Our thinking now versus then. The same moves, same buttons and keys. Left shoot, right jump. Small change and we go around again.</p></div><script>function setup(){var n=document.querySelector("#t"),e=n.innerHTML;n.innerHTML="",e.split("").map(function(e){var t=document.createElement("a");[","," ",".","'"].includes(e)?" "==e?t.setAttribute("class","xs"):"'"==e?t.setAttribute("class","xa"):","==e?t.setAttribute("class","xc"):t.setAttribute("class","xp"):t.setAttribute("class",e);e=e.charCodeAt(0).toString(2);t.innerText=new Array(9-e.length).join("0")+e,n.append(t),n.append("\u200b"),t.addEventListener("click",function(){converter(this)})})}function converter(e){for(var t=e.className,n=document.querySelectorAll("."+t),e=e.innerText,r=2<=e.length&&0!=e.indexOf("&")?"&x"+t.charCodeAt(0)+";":0===e.indexOf("&")?1===t.length?t:"xs"===t?" ":"xa"===t?"'":"xp"===t?".":",":t.charCodeAt(0).toString(2),c=0;c<n.length;c++)n[c].innerHTML=r}window.onload=setup;</script>
+</body>
+</html>
