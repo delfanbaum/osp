@@ -1,5 +1,5 @@
-# Danny's Open Source Projects
+# Oulipo Sorts of Projects
 
-Some personal projects whose source might as well be open. They're not really "open source" projects so much as finished things whose innards someone may someday be interested in. That said, feel free to use the code as you please with attribution per the licence included in this repo.
-
-Cheers!
+Originally a clearing house for the un-minified code for my contribution to
+[Taper #8](https://taper.badquar.to/8/bits.html), now being repurposed for other
+proof-of-concept Oulipo-like combinatory lit projects.

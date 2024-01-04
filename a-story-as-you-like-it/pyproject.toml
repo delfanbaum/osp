@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "a-story-as-you-like-it"
+version = "0.1.0"
+description = "A(nother) reworking of Raymond Queneau's \"A Story as You Like It\""
+authors = ["delfanbaum <delfanbaum@oreilly.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+bottle = "^0.12.25"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
