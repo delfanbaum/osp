@@ -34,8 +34,8 @@ def display_story_node(sn: StoryNode):
         forks += "<ul>"
         for k, v in sn.forks.items():
             forks += f"""
-<li><a hx-post="/api/story/{k}" 
-       hx-target="#story">{v}</a></li>
+<li hx-post="/api/story/{k}"
+    hx-target="#story">{v}</li>
 """
         forks += "</ul>"
 
