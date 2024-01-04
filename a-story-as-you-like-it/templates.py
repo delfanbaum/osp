@@ -2,6 +2,9 @@ from narrative_data import StoryNode
 
 
 def base_template(content:str):
+    gh = "https://github.com/delfanbaum/osp/tree/main/a-story-as-you-like-it"
+    i = ("sha384-D1Kt99CQMDuVetoL1lrYwg5t+9Qd" +
+         "He7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC")
     return f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +23,11 @@ def base_template(content:str):
         <main>
         {content}    
         <hr />
-        <p style="text-align:center"><a href="https://github.com/delfanbaum/osp/tree/main/a-story-as-you-like-it">Source on GitHub</a></p>
+        <p style="text-align:center"><a href="{gh}">Source on GitHub</a></p>
         </main>
     </body>
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+            integrity="{i}" crossorigin="anonymous"></script>
 </html>
 """
 
