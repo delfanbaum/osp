@@ -10,6 +10,9 @@ readme = "README.md"
 python = "^3.11"
 bottle = "^0.12.25"
 
+[tool.pyright]
+reportGeneralTypeIssues = false
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
