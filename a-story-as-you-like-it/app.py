@@ -22,4 +22,4 @@ def send_static(filename):
     return static_file(filename, root='css')
 
 if __name__ == "__main__":
-    run(app, host="localhost", port=8000, reloader=True)
+    run(app, host="localhost", port=8000)
