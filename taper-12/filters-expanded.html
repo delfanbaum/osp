@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filters</title>
+<!-- Comment
+
+I think a lot about tools, specifically writing tools, and how they affect the
+way we see the world as well as the way in which we operate upon it. 
+
+That said, this was more of a "hey! you can do this in JavaScript now!" project.
+
+_That_ said, the idea for this came from looking at my friend's collection of
+vintage black and white concert posters, and thinking about my own blog site's
+new "analog" styling, requiring all the images to be filtered in grayscale.
+Image editing software is horrifically expensive, usually, and I thought it
+might be fun to see what could be done in less than 2kb entirely in the browser.
+There's no "save" or anything (I suppose you could take a screen shot), so this
+is by definition "exploratory." A one-off. A playground.
+
+You can dig through the source to see what slider does what, but I think it's
+also kind of fun to have to just figure it out and play &mdash; it _is_ a playground,
+after all!
+
+  -->
+<style>body {font-family:sans-serif} #a {display: flex; flex-wrap:wrap; justify-content: space-evenly; width: 80%;margin: 0 auto;} #a div {width:100%;} label, input, button {display: block;margin: 2vh auto;} input[type="range"] {width: 20%} img {margin:5vh auto 0;display:block;max-width:100%;max-height:70vh;}</style>
+</head>
+<body>
+<div id="a"> <!-- for "app"-->
+  <form id="u" style="margin: 30vh auto 0;max-width:50%;text-align:center;">
+      <label for="f">Upload an Image</label>
+      <input type="file" id="f" accept="image/*">
+      <input type="submit">
+  </form>
+</div>
+<script>
+document.querySelector('#u').addEventListener('submit', x);
+function sats(e, as) { // set attributes
+    Object.keys(as).forEach(k => e.setAttribute(k, as[k]));
+};
+
+function ma(e) {  // make the filter sliders
+    let ic = document.createElement('div'); // image container
+    let bc = document.createElement('div'); // button container
+    let img = document.createElement('img'); 
+    let hr = document.createElement('input'); // hue rotate
+    let cr = document.createElement('input'); // contrast
+    let br = document.createElement('input'); // brightness
+    let sa = document.createElement('input'); // saturation
+    let b = document.createElement('button'); // reset
+    img.src = e.target.result;
+    ic.append(img);
+    prc = [cr, br, sa]; // percentage-based slider values
+    for (e in prc) {
+        sats(prc[e], { min: 0, max: 200, step: 10 });
+    };
+    sats(hr, { min: 0, max: 360, step: 10, value: 0 }); // hue rotate values
+    ftr = [br, cr, sa, hr]; // filters list
+    for (i in ftr) { // make the filters and add an event listener
+        ftr[i].setAttribute("type", "range");
+        ftr[i].addEventListener('change', e => {
+            img.style.filter = `saturate(${sa.value}%)
+                                hue-rotate(${hr.value}deg)
+                                contrast(${cr.value}%)
+                                brightness(${br.value}%)`
+        })
+    };
+    b.onclick = function() {
+        location.reload(); // reload the page
+    };
+    b.innerText = "Reset";
+    bc.append(b);
+    // replace the contents of the app with the sliders
+    document.querySelector("#a").replaceChildren(ic, ...ftr, bc);
+};
+
+function x(e) { // our file getter
+    let f = document.querySelector('#f');
+    let r = new FileReader();
+    e.preventDefault();
+    if (!f.value.length) return;
+    r.onload = ma;
+    r.readAsDataURL(f.files[0]);
+};
+</script>   
+</body>
+</html>
