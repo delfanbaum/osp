@@ -1,0 +1,40 @@
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 5vh 0 0;
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+}
+
+hr {
+  width: 80%;
+  margin: 5vh auto;
+}
+
+ul {
+  padding: 0;
+  margin: 16px 0;
+  display: flex;
+}
+
+li {
+  flex-grow: 1;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+li:hover {
+  background: #efefef;
+}
+
+/*# sourceMappingURL=style.css.map */

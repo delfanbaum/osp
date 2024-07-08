@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Conte à votre façon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Conte à votre façon</h1>
+        <p>(À Raymond Queneau)</p>
+    </header>
+    <hr />
+    <main>
+        <div id="story">
+            <p>{{storynode.id}}. {{storynode.text}}</p>
+            <ul>
+                {% for fork in storynode.forks %}
+                <li hx-get="/story/{{ fork.id }}" hx-target="#story">{{ fork.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <hr />
+        <p style="text-align:center"><a href="#">Source on GitHub</a></p>
+    </main>
+<script src="https://unpkg.com/htmx.org@2.0.0" integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw" crossorigin="anonymous"></script>
+</body>
+</html>

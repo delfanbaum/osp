@@ -1,0 +1,11 @@
+<div id="story">
+    <p>{{storynode.id}}. {{storynode.text}}</p>
+    <ul>
+        {% for fork in storynode.forks %}
+        <li hx-get="/story/{{ fork.id }}"
+            hx-target="#story"
+            hx-swap="outerHTML"
+        >{{ fork.text }}</li>
+        {% endfor %}
+    </ul>
+</div>

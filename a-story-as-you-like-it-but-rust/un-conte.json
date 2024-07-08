@@ -1,0 +1,278 @@
+[
+    {
+        "id": 1,
+        "text": "Désirez-vous connaître l’histoire des trois alertes petits pois ?",
+        "forks": [
+            {
+                "id": 4,
+                "text": "Si oui,  passez à 4."
+            },
+            {
+                "id": 2,
+                "text": "Si non, passez à 2."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "text": "Préférez-vous celle des trois minces grands échalas ?",
+        "forks": [
+            {
+                "id": 16,
+                "text": "Si oui, passez à 16."
+            },
+            {
+                "id": 3,
+                "text": "Si non, passez à 3."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "text": "Préférez-vous celle des trois moyens médiocres arbustes ?",
+        "forks": [
+            {
+                "id": 17,
+                "text": "Si oui, passez à 17."
+            },
+            {
+                "id": 21,
+                "text": "Si non, passez à 21."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "text": "Il y avait une fois trois petits pois vêtus de vert qui dormaient gentiment dans leur cosse. Leur visage bien rond respirait par les trous de leurs narines et l’on entendait leur ronflement doux et harmonieux.",
+        "forks": [
+            {
+                "id": 9,
+                "text": "Si vous préférez une autre description, passez à 9."
+            },
+            {
+                "id": 5,
+                "text": "Si celle-ci vous convient, passez à 5."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "text": "Ils ne rêvaient pas. Ces petits êtres en effet ne rêvent jamais.",
+        "forks": [
+            {
+                "id": 6,
+                "text": "Si vous préférez qu’ils rêvent passez à 6."
+            },
+            {
+                "id": 7,
+                "text": "Si non, passez à 7."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "text": "Ils rêvaient. Ces petits être en effet rêvent toujours et leurs nuits sécrètent des songes charmants.",
+        "forks": [
+            {
+                "id": 11,
+                "text": "Si vous désirez connaître ces songes, passez à 11."
+            },
+            {
+                "id": 7,
+                "text": "Si vous n’y tenez pas, vous passez à 7."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "text": "Leurs pieds mignons trempaient dans de chaudes chaussettes et ils portaient au lit des gants de velours noir.",
+        "forks": [
+            {
+                "id": 8,
+                "text": "Si vous préférez des gants d’une autre couleur, passez à 8."
+            },
+            {
+                "id": 10,
+                "text": "Si cette couleur vous convient, passez à 10."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "text": "Ils portaient au lit des gants de velours bleu.",
+        "forks": [
+            {
+                "id": 7,
+                "text": "Si vous préférez des gants d’une autre couleur, passez à 7."
+            },
+            {
+                "id": 10,
+                "text": "Si cette couleur vous convient, passez à 10."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "text": "Il y avait une fois trois petits pois qui roulaient leur bosse sur les grands chemins. Le soir venu, fatigués et las, ils s’endormirent très rapidement.",
+        "forks": [
+            {
+                "id": 5,
+                "text": "Si vous désirez connaître la suite, passez à 5."
+            },
+            {
+                "id": 21,
+                "text": "Si non, passez à 21."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "text": "Tous les trois faisaient le même rêve, ils s’aimaient en effet tendrement et, en bons fiers trumeaux, songeaient toujours semblablement.",
+        "forks": [
+            {
+                "id": 11,
+                "text": "Si vous désirez connaître leur rêve, passez à 11."
+            },
+            {
+                "id": 12,
+                "text": "Si non, passez à 12."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "text": "Ils rêvaient qu’ils allaient chercher leur soupe à la cantine populaire et qu’en ouvrant leur gamelle, ils découvraient que c’était de la soupe d’ers. D’horreur, ils s’éveillent.",
+        "forks": [
+            {
+                "id": 0,
+                "text": "Si vous voulez savoir pourquoi ils s’éveillent d’horreur, consulter le Larousse au mot « ers » et n’en parlons plus."
+            },
+            {
+                "id": 12,
+                "text": "Si vous jugez inutile d’approfondir la question, passez à 12."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "text": "Opopoï ! S’écrient-ils en ouvrant les yeux. Opopoï ! Quel songe avons-nous enfanté là ? Mauvais présage dit le premier. Oui-da dit le second, c’est bien vrai, me voilà triste. Ne vous troublez pas ainsi, dit le troisième qui était le plus futé, il ne s’agit pas de s’émouvoir, mais de comprendre, bref, je m’en vais vous analyser ça.",
+        "forks": [
+            {
+                "id": 15,
+                "text": "Si vous désirez connaître tout de suite l’interprétation de ce songe, passez à 15."
+            },
+            {
+                "id": 15,
+                "text": "Si vous souhaitez au contraire connaître les réactions des deux autres, passez à 13."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "text": "Tu nous la bailles belle, dit le premier. Depuis quand sais-tu analyser les songes ? Oui, depuis quand, ajouta le second ?",
+        "forks": [
+            {
+                "id": 14,
+                "text": "Si vous désirez aussi savoir depuis quand, passez à 14."
+            },
+            {
+                "id": 14,
+                "text": "Si non, passez à 14 tout de même car vous ne le saurez pas plus."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "text": "Depuis quand ? s’écria le troisième. Est-ce que je sais moi ! Le fait est que je pratique la chose. Vous allez voir !",
+        "forks": [
+            {
+                "id": 15,
+                "text": "Si vous voulez aussi voir, passez à 15."
+            },
+            {
+                "id": 15,
+                "text": "Si non, passez également à 15, car vous ne verrez rien."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "text": "Eh bien ! voyons, dirent ses frères. Votre ironie ne me plaît pas, répliqua l’autre, et vous ne saurez rien. D’ailleurs au cours de cette conversation d’un ton assez vif, votre sentiment d’horreur ne s’est-il pas estompé ? effacé même ? Alors à quoi bon remuer le bourbier de votre inconscient de papilionacées ? Allons plutôt nous laver à la fontaine et saluer ce gai matin dans l’hygiène et la sainte euphorie ! Aussitôt dit, aussitôt fait : les voilà qui se glissent hors de leur cosse, se laissent doucement rouler sur le sol et puis au petit trot gagnent joyeusement le théâtre de leurs ablutions.",
+        "forks": [
+            {
+                "id": 16,
+                "text": "Si vous désirez savoir ce qui se passe sur le théâtre de leurs ablutions, passez à 16."
+            },
+            {
+                "id": 21,
+                "text": "Si vous ne le désirez pas, vous passez à 21."
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "text": "Trois grands échalas les regardaient faire.",
+        "forks": [
+            {
+                "id": 21,
+                "text": "Si les trois grands échalas vous déplaisent, passez à 21."
+            },
+            {
+                "id": 18,
+                "text": "S’ils vous conviennent, passez à 18."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "text": "Trois moyens médiocres arbustes les regardaient faire.",
+        "forks": [
+            {
+                "id": 21,
+                "text": "Si les trois moyens médiocres arbustes vous déplaisent, passez à 21."
+            },
+            {
+                "id": 18,
+                "text": "S’ils vous conviennent, passez à 18."
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "text": "Se voyant ainsi zyeutés, les trois alertes petits pois qui étaient fort pudiques s’ensauvèrent.",
+        "forks": [
+            {
+                "id": 19,
+                "text": "Si vous désirez savoir ce qu’ils firent ensuite, passez à 19."
+            },
+            {
+                "id": 21,
+                "text": "Si vous ne le désirez pas, vous passez à 21."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "text": "Ils coururent bien fort pour regagner leur cosse et, refermant celle-ci derrière eux, s’y endormirent de nouveau.",
+        "forks": [
+            {
+                "id": 20,
+                "text": "Si vous désirez connaître la suite, passez à 20."
+            },
+            {
+                "id": 21,
+                "text": "Si vous ne le désirez pas, vous passez à 21."
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "text": "Il n’y a pas de suite, le conte est terminé.",
+        "forks": []
+    },
+    {
+        "id": 21,
+        "text": "Dans ce cas, le conte est également terminé.",
+        "forks": []
+    }
+]
