@@ -25,7 +25,7 @@
         </div>
 
         <hr />
-        <p style="text-align:center"><a href="#">Source on GitHub</a></p>
+        <p style="text-align:center"><a href="https://github.com/delfanbaum/osp/tree/main/a-story-as-you-like-it-but-rust">Source on GitHub</a></p>
     </main>
 <script src="https://unpkg.com/htmx.org@2.0.0" integrity="sha384-wS5l5IKJBvK6sPTKa2WZ1js3d947pvWXbPJ1OmWfEuxLgeHcEbjUUA5i9V5ZkpCw" crossorigin="anonymous"></script>
 </body>
